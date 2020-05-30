@@ -1,438 +1,498 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<%- include('./layouts/header') -%>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>John Fabian S.A.</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--================ Start Header Area =================-->
+<header class="header_area">
+	<div class="main_menu">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a class="navbar-brand logo_h" href="/"><img src="img/logo-v2.png" height="40" alt=""></a>
+				<a class="navbar-brand logo_inner_page" href="/"><img src="img/logo2.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<ul class="nav navbar-nav menu_nav">
+						<li class="nav-item active"><a class="nav-link" href="/">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+						<!-- <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Pages</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Blog</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+<!--================ End Header Area =================-->
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <!-- Place favicon.ico in the root directory -->
+<!--================ Start Home Banner Area =================-->
+<section class="home_banner_area">
+	<div class="banner_inner">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6">
+					<div class="banner_content">
+						<h3 style="margin-top: 230px;">Hey hola!</h3>
+						<h1 class="text-uppercase">Soy John Timoteo</h1>
+						<h5 class="text-uppercase">Desarrollador de Software</h5>
+						<div class="social_icons my-5">
+							<a href="https://www.linkedin.com/in/jfabiant/" target="_blank"><i
+									class="ti-linkedin"></i></a>
+							<a href="https://twitter.com/angelandrectv" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="https://www.facebook.com/john.fabiantorres.5" target="_blank"><i
+									class="ti-facebook"></i></a>
+							<a target="_blank"
+								href="https://mail.google.com/mail/?view=cm&fs=1&to=john.timoteo@tecsup.edu.pe&su=SUBJECT&body=BODY"><i
+									class="ti-google"></i></a>
+						</div>
+						<a class="primary_btn" href="/contacto"><span>Contactar</span></a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="home_right_img">
+						<img class="img-fluid" src="img/banner/scientist.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Home Banner Area =================-->
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/magnific-popup.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/themify-icons.css">
-    <link rel="stylesheet" href="/css/nice-select.css">
-    <link rel="stylesheet" href="/css/flaticon.css">
-    <link rel="stylesheet" href="/css/gijgo.css">
-    <link rel="stylesheet" href="/css/animate.min.css">
-    <link rel="stylesheet" href="/css/slick.css">
-    <link rel="stylesheet" href="/css/slicknav.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-</head>
+<!--================ Start Statistics Area =================-->
+<section class="statistics_area">
+	<div class="container">
+		<div class="row justify-content-lg-start justify-content-center">
+			<div class="col-lg-2 col-md-3">
+				<div class="statistics_item">
+					<h3><span class="counter">15</span>+</h3>
+					<p>Proyectos finalizados</p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3">
+				<div class="statistics_item">
+					<h3><span class="counter">2</span>+</h3>
+					<p>Proyectos en marcha</p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3">
+				<div class="statistics_item">
+					<h3><span class="counter">9</span>/10</h3>
+					<p>Puntuación media</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Statistics Area =================-->
 
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+<!--================ Start About Us Area =================-->
+<section class="about_area section_gap">
+	<div class="container">
+		<div class="row justify-content-start align-items-center">
+			<div class="col-lg-5">
+				<div class="about_img">
+					<img class="" src="img/about-us-v2.png" alt="" height="600">
+				</div>
+			</div>
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-2">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-7">
-                            <!-- <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                 <li><a href="portfolio.html">Portfolio</a></li>
-                                                 <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div> -->
-                        </div>
-                        <!-- <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="Appointment">
-                                <div class="book_btn d-none d-lg-block">
-                                    <a  href="#">Contact Me</a>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
+			<div class="offset-lg-1 col-lg-5">
+				<div class="main_title text-left">
+					<p class="top_text">Acerca de mi <span></span></p>
+					<h2>
+						Desarrollo de aplicaciones web <br>
+						y moviles
+					</h2>
+					<p>
+						Preprofesional de la carrera de Diseño de Software e Integración de Sistemas del Instituto
+						Superior Tecnológico TECSUP.
+						Organizado, con rapidez para el aprendizaje y eficiente en entornos dinámicos.
+						Capacitado para el desarrollo de aplicaciones web, móvil y escritorio –
+						programación en Java, C#, JavaScript y Python. Bases de datos SQL Server,
+						Oracle y MongoDB.
+					</p>
+					<a class="primary_btn" href="/files/JohnTimoteoTorresCV.pdf"><span>Descargar CV</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End About Us Area =================-->
 
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
+<!--================ Start Features Area =================-->
+<section class="services_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main_title">
+					<p class="top_text">Mis servicios <span></span></p>
+					<h2>Que servicios te <br>
+						ofrezco </h2>
+				</div>
+			</div>
+		</div>
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center slider_bg_1">
-            <div class="shap_pattern d-none d-lg-block">
-                <img src="img/about/grid.png" alt="">
-            </div>
-            <div class="social_links">
-                <ul>
-                    <li><a href="https://www.facebook.com/john.fabiantorres.5" target="_blank"> <i class="fa fa-facebook"></i> </a></li>
-                    <li><a href="https://www.linkedin.com/in/jfabiant/" target="_blank"> <i class="fa fa-linkedin"></i> </a></li>
-                    <li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=john.timoteo@tecsup.edu.pe&su=SUBJECT&body=BODY"> <i class="fa fa-google-plus"></i> </a></li>
-                </ul>
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-12">
-                        <div class="slider_text text-center">
-                            <h3>
-                                John Fabian Timoteo Torres
-                            </h3>
-                            <span>Desarrollador de Software</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
+		<div class="row">
+			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<div class="service_item">
+					<img src="img/services/s4.png" alt="" height="75">
+					<h4>Soluciones basadas en la nube</h4>
+					<p>Despliegue de servidores y bases de datos en la nube.</p>
+					<!-- <a href="#" class="primary_btn2 mt-35">Learn More</a> -->
+				</div>
+			</div>
 
-    <!-- service_area  -->
-    <div class="service_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title text-center mb-65">
-                        <span>Mis servicios</span>
-                        <h3>Desarrollo de <br>
-                            Software</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/1.svg" alt="">
-                        </div>
-                        <h3>Soluciones basadas en la nube</h3>
-                        <p>
-                            Despliegue de servidores y bases de datos en la nube.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/2.svg" alt="">
-                        </div>
-                        <h3>Desarrollo de aplicaciones web</h3>
-                        <p>Diseño y desarrollo de aplicaciones web a medida.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/3.svg" alt="">
-                        </div>
-                        <h3>Desarrollo de aplicaciones moviles</h3>
-                        <p>Diseño y desarrollo de aplicaciones móviles consumiendo servicios.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ service_area  -->
+			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<div class="service_item">
+					<img src="img/services/s6.png" alt="" height="75">
+					<h4>Desarrollo de aplicaciones web</h4>
+					<p>Diseño y desarrollo de aplicaciones web a medida.</p>
+					<!-- <a href="#" class="primary_btn2 mt-35">Learn More</a> -->
+				</div>
+			</div>
 
-    <!-- portfolio_area -->
-    <div class="portfolio_area portfolio_bg_1">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title white_text text-center">
-                        <span>Portafolio</span>
-                        <h3>Algunos de mis increibles <br>
-                            proyectos</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ portfolio_area -->
+			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<div class="service_item">
+					<img src="img/services/s5.png" alt="" height="75">
+					<h4>Desarrollo de apps móviles</h4>
+					<p>Diseño y desarrollo de aplicaciones móviles consumiendo servicios.</p>
+					<!-- <a href="#" class="primary_btn2 mt-35">Learn More</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Features Area =================-->
 
-    <!-- portfolio_image_area  -->
-    <div class="portfolio_image_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-md-5">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <img src="img/portfolio/1.png" alt="">
-                        </div>
-                        <a href="img/portfolio/1.png" class="popup popup-image"></a>
-                        <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>Acceso Crediticio</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-md-7">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <img src="img/portfolio/2.jpg" alt="">
-                        </div>
-                        <a href="img/portfolio/2.jpg" class="popup popup-image"></a>
-                        <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>TECSUP</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-md-8">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <img src="img/portfolio/3.jpg" alt="">
-                        </div>
-                        <a href="img/portfolio/3.jpg" class="popup popup-image"></a>
-                        <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>PlayTec Edu</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ portfolio_image_area  -->
+<!--================ Start Testimonial Area =================-->
+<section class="testimonial_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main_title">
+					<p class="top_text">Retroalimentación <span></span></p>
+					<h2>Honorables compañeros <br>
+						dicen sobre mi </h2>
+				</div>
+			</div>
+		</div>
 
-    <!-- about_me  -->
-    <div class="about_me">
-        <div class="about_large_title d-none d-lg-block">
-            Acerca
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-md-6">
-                    <div class="about_e_details">
-                        <h3>Acerca de mi</h3>
-                        <p>Preprofesional de la carrera de Diseño de Software e Integración de Sistemas
-                            perteneciente al quinto superior del Instituto Superior Tecnológico TECSUP.
-                            Organizado, con rapidez para el aprendizaje y eficiente en entornos dinámicos.
-                            Capacitado para el desarrollo de aplicaciones web, móvil y escritorio –
-                            programación en Java, C#, JavaScript y Python. Bases de datos SQL Server,
-                            Oracle y MongoDB.
-                            .</p>
-                        <div class="download_cv">
-                            <a class="boxed-btn3" href="#">Download CV</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6">
-                    <div class="about_img">
-                        <div class="color_pattern d-none d-lg-block">
-                            <img src="img/about/color_grid.png" alt="">
-                        </div>
-                        <div class="my_Pic">
-                            <img src="img/about/man-v2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ about_me  -->
+		<div class="owl-carousel owl-theme testimonial-slider ">
+			<div class="testimonial-item">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="testi-img mb-4 mb-lg-0">
+							<img src="img/testimonials/t1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="testi-right">
+							<h4>Wilson Alejandro Quesada Tinco</h4>
+							<p><small>Software Developer - Java - JPA - HIBERNATE | Mobile Android - Xamarin |
+									NodeJS | Javascript - TypeScript - ES6</small></p>
 
-    <div class="counter_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_counter text-center">
-                        <h3>
-                            <span class="counter">7 </span><span>+</span>
-                        </h3>
-                        <p>Proyectos totales</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_counter text-center">
-                        <h3>
-                            <span class="counter">3 </span>
-                        </h3>
-                        <p>Proyectos en marcha</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_counter text-center">
-                        <h3>
-                            <span class="counter">80 </span> <span>%</span>
-                        </h3>
-                        <p>Trabajos exitosos</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- testimonial_area  -->
-    <div class="testimonial_area ">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testmonial_active owl-carousel">
-                        <div class="single_carousel">
-                            <div class="single_testmonial text-center">
-                                <div class="quote">
-                                    <img src="img/testmonial/quote.svg" alt="">
-                                </div>
-                                <p> Es muy responsable con los proyectos y ordenado al momento de trabajar <br>
-                                    ademas de ser un gran compañero.
-                                    <br>
-                                </p>
-                                <div class="testmonial_author">
-                                    <h3>Wilson Alejandro Quesada Tinco</h3>
-                                    <span>Software Developer - Java - JPA - HIBERNATE | Mobile Android - Xamarin |
-                                        NodeJS | Javascript - TypeScript - ES6</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="single_testmonial text-center">
-                                <div class="quote">
-                                    <img src="img/testmonial/quote.svg" alt="">
-                                </div>
-                                <p>Es enfocado en su trabajo y siempre llega a tiempo a las reuniones de <br>
-                                    trabajo, sabe bastante cosas de su área.
-                                    <br> </p>
-                                <div class="testmonial_author">
-                                    <!-- <div class="thumb">
-                                                        <img src="img/testmonial/thumb.png" alt="">
-                                                </div> -->
-                                    <h3>Jorge Alfredo Flores Bendezú</h3>
-                                    <span>Desarrollador FullStack en BOB - Economía Circular</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="single_testmonial text-center">
-                                <div class="quote">
-                                    <img src="img/testmonial/quote.svg" alt="">
-                                </div>
-                                <p>Es muy metido en las tecnologías de su rama y le gusta mucho lo que <br>
-                                    hace, en el largo tiempo que lo conozco ha demostrado madurez.
-                                    <br>
-                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
-                                <div class="testmonial_author">
-                                    <!-- <div class="thumb">
-                                                        <img src="img/testmonial/thumb.png" alt="">
-                                                </div> -->
-                                    <h3>Grover Lázaro</h3>
-                                    <span>Asesor en desarrollo de nuevos negocios | Programador JavaScript</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /testimonial_area  -->
+							<p>Es muy responsable con los proyectos y ordenado al momento de trabajar
+								ademas de ser un gran compañero. </p>
+							<ul class="star_rating mt-4">
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li class="disable"><span><i class="fas fa-star"></i></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-item">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="testi-img mb-4 mb-lg-0">
+							<img src="img/testimonials/t3.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="testi-right">
+							<h4>Jorge Alfredo Flores Bendezú</h4>
+							<p><small>Desarrollador FullStack en BOB - Economía Circular</small></p>
+							<p>Es enfocado en su trabajo y siempre llega a tiempo a las reuniones de
+								trabajo, sabe bastante cosas de su área.</p>
+							<ul class="star_rating mt-3">
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-item">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="testi-img mb-4 mb-lg-0">
+							<img src="img/testimonials/t2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="testi-right">
+							<h4>Grover Lázaro</h4>
+							<p><small>Asesor en desarrollo de nuevos negocios | Programador JavaScript</small></p>
+
+							<p>Es muy metido en las tecnologías de su rama y le gusta mucho lo que
+								hace, en el largo tiempo que lo conozco ha demostrado madurez. </p>
+							<ul class="star_rating mt-3">
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+								<li class="disable"><span><i class="fas fa-star"></i></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Testimonial Area =================-->
+
+<section class="portfolio_area" id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main_title">
+					<p class="top_text">Estudios <span></span></p>
+					<h2>Consulta mis ultimas <br>
+						certificaciones </h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="filters portfolio-filter">
+			<ul>
+				<li class="active" data-filter="*">todos</li>
+				<li data-filter=".popular">populares</li>
+				<li data-filter=".latest"> ultimos</li>
+			</ul>
+		</div>
+
+		<div class="filters-content">
+			<div class="row portfolio-grid">
+				<div class="grid-sizer col-md-3 col-lg-3"></div>
+				<div class="col-lg-6 col-md-6 all following">
+					<div class="single_portfolio">
+						<img class="img-fluid w-100" src="img/portfolio/react-1.jpg" alt="">
+						<div class="overlay"></div>
+						<div class="short_info">
+							<h4><a href="portfolio-details.html">Programador React.js</a></h4>
+							<p>Programación, Framework para desarrollo web.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 all latest popular upcoming">
+					<div class="single_portfolio">
+						<img class="img-fluid w-100" src="img/portfolio/scrum-1.jpg" alt="">
+						<div class="overlay"></div>
+						<div class="short_info">
+							<h4><a href="portfolio-details.html">SCRUM Study</a></h4>
+							<p>Metodología ágil, Fundamentos de la Metodología ágil SCRUM. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 all latest following">
+					<div class="single_portfolio">
+						<img class="img-fluid w-100" src="img/portfolio/innvenials-1.jpg" alt="">
+						<div class="overlay"></div>
+						<div class="short_info">
+							<h4><a href="portfolio-details.html">Hult Prize</a></h4>
+							<p>Competencia Hult Prize at TECSUP, Integrante del grupo
+								Innvenials con el proyecto Allin Qhatu.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="blog-area section-gap">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main_title">
+					<p class="top_text">Experiencias <span></span></p>
+					<h2>Consulta mis <br>
+						trabajos recientes </h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-4 col-md-6">
+				<div class="single-blog">
+					<div class="thumb">
+						<img class="img-fluid" src="img/b10.png" alt="">
+					</div>
+					<div class="short_details">
+						<div class="meta-top d-flex">
+							<a href="#"><i class="ti-calendar"></i> 4 de Abril del 2020</a>
+						</div>
+						<a class="d-block" href="single-blog.html">
+							<h4>Desarrollador Backend</h4>
+						</a>
+						<div class="text-wrap">
+							<p>
+								Diseño e implementación de servicios RPA con la finalidad de
+								extraer datos de la plataforma de mayoristas entel Perú automatizando
+								el proceso de envio de datos al servicio de análisis empresarial Power BI
+								generando un gran ahorro de tiempo para el sector de Business Intelligence.
+							</p>
+						</div>
+						<!-- <a href="#" class="primary_btn2">Learn More</a> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="single-blog">
+					<div class="thumb">
+						<img class="img-fluid" src="img/b9.png" alt="">
+					</div>
+					<div class="short_details">
+						<div class="meta-top d-flex">
+							<a href="#"><i class="ti-calendar"></i> 5 de Febrero del 2020</a>
+						</div>
+						<a class="d-block" href="single-blog.html">
+							<h4>Desarrollador FullStack</h4>
+						</a>
+						<div class="text-wrap">
+							<p>
+								Diseño e implementación de un sistema capaz de evaluar a postulantes para
+								puestos de trabajo, automatizando el proceso de pre-selección de candidatos,
+								utilizando el framework ReactJS y Spring Boot en Amazon Web Services.
+							</p>
+						</div>
+						<!-- <a href="#" class="primary_btn2">Learn More</a> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-blog">
+					<div class="thumb">
+						<img class="img-fluid" src="img/b7.png" alt="">
+					</div>
+					<div class="short_details">
+						<div class="meta-top d-flex">
+							<a href="#"><i class="ti-calendar"></i> 14 de Marzo del 2019</a>
+						</div>
+						<a class="d-block" href="single-blog.html">
+							<h4>Desarrollador Backend</h4>
+						</a>
+						<div class="text-wrap">
+							<p>
+								Diseño e implementación de servicios autónomos orientados a la arquitectura
+								de microservicios para mejorar elrendimiento y desempeño de aplicativos webs
+								y móviles de la empresa, utilizando el entorno NodeJS.
+							</p>
+						</div>
+						<!-- <a href="#" class="primary_btn2">Learn More</a> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-blog">
+					<div class="thumb">
+						<img class="img-fluid" src="img/b8.png" alt="">
+					</div>
+					<div class="short_details">
+						<div class="meta-top d-flex">
+							<a href="#"><i class="ti-calendar"></i> 6 de Agosto del 2019</a>
+						</div>
+						<a class="d-block" href="single-blog.html">
+							<h4>Desarrollador Backend</h4>
+						</a>
+						<div class="text-wrap">
+							<p>
+								Diseño e implementación de la plataforma e-Learning PlayTec Edu para ofrecer
+								clases y juegos virtuales a colegios socios de la empresa, utilizando el entorno
+								NodeJS.
+							</p>
+						</div>
+						<!-- <a href="#" class="primary_btn2">Learn More</a> -->
+					</div>
+				</div>
+			</div>
 
 
-    <!-- footer start -->
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-md-6">
-                        <div class="menu_links">
-                            <ul>
-                                <li><a href="#">Sobre mi</a></li>
-                                <li><a href="#">Mis proyectos</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-6">
-                        <div class="socail_links">
-                            <ul>
-                                <li><a href="https://www.facebook.com/john.fabiantorres.5" target="_blank"> <i class="fa fa-facebook"></i> </a></li>
-                                <li><a href="https://www.linkedin.com/in/jfabiant/" target="_blank"> <i class="fa fa-linkedin"></i> </a></li>
-                                <li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=john.timoteo@tecsup.edu.pe&su=SUBJECT&body=BODY"> <i class="fa fa-google-plus"></i> </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--/ footer end  -->
 
-    <!-- JS here -->
-    <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/isotope.pkgd.min.js"></script>
-    <script src="/js/ajax-form.js"></script>
-    <script src="/js/waypoints.min.js"></script>
-    <script src="/js/jquery.counterup.min.js"></script>
-    <script src="/js/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/scrollIt.js"></script>
-    <script src="/js/jquery.scrollUp.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/nice-select.min.js"></script>
-    <script src="/js/jquery.slicknav.min.js"></script>
-    <script src="/js/jquery.magnific-popup.min.js"></script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/gijgo.min.js"></script>
+		</div>
+	</div>
+</section>
 
-    <!--contact js-->
-    <script src="/js/contact.js"></script>
-    <script src="/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/js/jquery.form.js"></script>
-    <script src="/js/jquery.validate.min.js"></script>
-    <script src="/js/mail-script.js"></script>
+<!--================ Start Brands Area =================-->
+<section class="brands-area section_gap_bottom">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="owl-carousel brand-carousel">
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="img/brands/logo6.png" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="img/brands/logo7.png" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="img/brands/logo8.png" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="img/brands/logo9.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Brands Area =================-->
 
-    <script src="/js/main.js"></script>
-</body>
-
-</html>
+<%- include('./layouts/footer') -%>
