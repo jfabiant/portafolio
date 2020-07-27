@@ -5,13 +5,17 @@
 				<div class="footer_top flex-column">
 					<div class="footer_logo">
 						<a href="/">
-							<img src="img/logo-v3.png" alt="" height="70">
+							<img src="/img/logo-v3.png" alt="" height="70">
 						</a>
 						<div class="d-lg-block d-none">
 							<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
 								<div class="collapse navbar-collapse offset">
 									<ul class="nav navbar-nav menu_nav mx-auto">
 										<li class="nav-item"><a class="nav-link text-white" href="/">Inicio</a></li>
+										<li class="nav-item"><a class="nav-link text-white"
+												href="/certificados">Certificados</a></li>
+										<li class="nav-item"><a class="nav-link text-white"
+												href="/noticias">Noticias</a></li>
 										<li class="nav-item"><a class="nav-link text-white"
 												href="/contacto">Contacto</a></li>
 									</ul>
@@ -46,19 +50,55 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/stellar.js"></script>
-<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="vendors/isotope/isotope-min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/mail-script.js"></script>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/js/popper.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/stellar.js"></script>
+<script src="/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="/vendors/isotope/isotope-min.js"></script>
+<script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="/js/jquery.ajaxchimp.min.js"></script>
+<script src="/js/mail-script.js"></script>
 <!--gmaps Js-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-<script src="js/gmaps.min.js"></script>
-<script src="js/theme.js"></script>
+<script src="/js/gmaps.min.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/sweetalert2@9.js"></script>
+
+<script>
+	
+	// Carousel
+	$(document).ready(function () {
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+			items: 4,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 1000,
+			autoplayHoverPause: true
+		});
+		owl.trigger('play.owl.autoplay', [1000])
+	});
+
+	// Submit Contact Form
+	$("#contactForm").submit(function (e) {
+		e.preventDefault();
+		Swal.fire({
+		title: '<strong>Tu mensaje ha sido enviado con éxito.</strong>',
+		icon: 'success',
+		html:'<p>En breve me pondré en contacto contigo 🤝</p>',
+		showCloseButton: true,
+		focusConfirm: false,
+		confirmButtonText:
+			'<i class="fa fa-thumbs-up"></i> Genial !',
+		confirmButtonAriaLabel: 'Thumbs up, great!'
+	});
+		return false;
+	});
+
+</script>
+
 </body>
 
 </html>

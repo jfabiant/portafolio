@@ -1,6 +1,6 @@
 <%- include('./layouts/header') -%>
 
-<!--================ Start Header Area =================-->
+
 <header class="header_area header_inner_page">
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -19,6 +19,8 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav">
                         <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                        <li class="nav-item "><a class="nav-link" href="/certificados">Certificados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/noticias">Noticias</a></li>
                         <li class="nav-item active"><a class="nav-link" href="/contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -26,9 +28,7 @@
         </nav>
     </div>
 </header>
-<!--================ End Header Area =================-->
 
-<!--================ Start Banner Area =================-->
 <section class="banner_area">
     <div class="banner_inner d-flex align-items-center">
         <div class="container">
@@ -42,11 +42,7 @@
         </div>
     </div>
 </section>
-<!--================ End Banner Area =================-->
 
-
-
-<!-- ================ contact section start ================= -->
 <section class="section-margin">
     <div class="container">
         <div class="row">
@@ -54,7 +50,7 @@
                 <h2 class="contact-title">Ponerse en contacto</h2>
             </div>
             <div class="col-lg-8 mb-4 mb-lg-0">
-                <form class="form-contact contact_form" action="procesar_contacto" method="post" id="contactForm"
+                <form class="form-contact contact_form" id="contactForm"
                     novalidate="novalidate">
                     <div class="row">
                         <div class="col-12">
@@ -101,14 +97,14 @@
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                     <div class="media-body">
-                        <h3><a href="tel:454545654"> (+51) 979 295 091</a></h3>
-                        <p>Lunes a Martes de 9am a 6pm</p>
+                        <h3><a href="tel:+51995958375"> (+51) 979 295 091</a></h3>
+                        <p>Lunes a Sabado de 9am a 6pm</p>
                     </div>
                 </div>
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="ti-email"></i></span>
                     <div class="media-body">
-                        <h3><a href="mailto:support@colorlib.com">john.timoteo@tecsup.edu.pe</a></h3>
+                        <h3><a href="mailto:john.timoteo@tecsup.edu.pe">john.timoteo@tecsup.edu.pe</a></h3>
                         <p>Enviame tu solictud!</p>
                     </div>
                 </div>
@@ -116,6 +112,5 @@
         </div>
     </div>
 </section>
-<!-- ================ contact section end ================= -->
 
 <%- include('./layouts/footer') -%>

@@ -1,0 +1,98 @@
+<%- include('./layouts/header') -%>
+
+<header class="header_area header_inner_page">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="/"><img src="/img/logo-v2.png" alt=""></a>
+                <a class="navbar-brand logo_inner_page" href="/"><img src="/img/logo-v3.png" height="80" class="mt-4"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav">
+                        <li class="nav-item active"><a class="nav-link" href="/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/certificados">Certificados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/noticias">Noticias</a></li>
+                        <li class="nav-item "><a class="nav-link" href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2> <%= value.projectName %> </h2>
+                <div class="page_link">
+                    <a href="/">Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio_details_area section-margin">
+    <div class="container">
+        <div class="row">
+            <div class="offset-xl-1 col-xl-10">
+                <div class="portfolio_details_inner">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="left_img">
+                                <img class="img-fluid" src='/img/<%= value.projectImg %>' alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-7 mb-4 mb-lg-0">
+                            <p>
+                                <%= value.projectDescription %>
+                            </p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="portfolio_right_text mt-30">
+                                <h4 class="text-uppercase">Información del Proyecto</h4>
+                                <p>
+                                    <%= value.projectInfo %>
+                                </p>
+                                <ul class="list">
+                                    <li>
+                                        <span>Valuación</span>: 
+                                        <%
+                                        const rating = value.projectRating;
+                                        for(let i=0; i<rating; i++) {
+                                            
+                                         %>
+                                         <i class="fa fa-star"></i>
+                                         <%
+                                            }
+                                         %>
+                                    </li>
+                                    <li><span>Cliente</span>: <%= value.projectClient %> </li>
+                                    <li><span>Sitio web</span>: <a href="<%= value.projectWebsite %>"
+                                            target="_blank"><%= value.projectWebsite %></a> </li>
+                                    <li><span>Completado</span>: <%= value.projectCompleted %> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('./layouts/footer') -%>

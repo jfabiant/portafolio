@@ -1,0 +1,124 @@
+<%- include('./layouts/header') -%>
+
+
+<header class="header_area header_inner_page">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="/"><img src="img/logo-v2.png" alt=""></a>
+                <a class="navbar-brand logo_inner_page" href="/"><img src="img/logo-v3.png" height="80" class="mt-4" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav">
+                        <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                        <li class="nav-item "><a class="nav-link" href="/certificados">Certificados</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="/noticias">Noticias</a></li>
+                        <li class="nav-item "><a class="nav-link" href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>Noticias</h2>
+                <div class="page_link">
+                    <a href="/">Inicio</a>
+                    <a href="/noticias">Noticias</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog_area section-margin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="blog_left_sidebar">
+                    <article class="blog_item">
+                      <div class="blog_item_img">
+                        <iframe frameborder="0" allowfullscreen="true" allow="autoplay" title="Dailymotion video player" height="400" id="f1284f9f45d95c" src="https://www.dailymotion.com/embed/video/k2gsSMZN5e4XW3sG4UZ?api=postMessage&amp;id=f1284f9f45d95c&amp;origin=https%3A%2F%2Fcomputerhoy.com" class=" card-img  rounded-0 st-swap-player" style="z-index: 0 !important; transform: translateX(0%) translateY(0%) translateZ(0px) scale3d(1, 1, 1);"></iframe>
+                        <a href="/detalle-noticia/1" class="blog_item_date">
+                          <h3>26</h3>
+                          <p>Jul</p>
+                        </a>
+                      </div>
+                      
+                      <div class="blog_details">
+                          <a class="d-inline-block" href="/detalle-noticia/1">
+                              <h2>Estados Unidos ya está desarrollando un Internet Cuántico que será imposible de hackear</h2>
+                          </a>
+                          <p>Llevamos casi 30 años usando Internet a nivel doméstico, y en esencia no ha cambiado demasiado. Pero la revolución está cerca. La Internet Cuántica ya está en marcha.</p>
+                          <ul class="blog-info-link">
+                            <li><a><i class="far fa-user"></i> Tecnología</a></li>
+                            <li><a><i class="far fa-comments"></i> 03 Comments</a></li>
+                          </ul>
+                      </div>
+                    </article>
+                    
+                    <article class="blog_item">
+                      <div class="blog_item_img">
+                        <iframe width="300" height="400" src="https://www.youtube.com/embed/fssZICsV4Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img  rounded-0"></iframe>
+                        
+                        <a href="/detalle-noticia/2" class="blog_item_date">
+                          <h3>26</h3>
+                          <p>Jul</p>
+                        </a>
+                      </div>
+                      
+                      <div class="blog_details">
+                          <a class="d-inline-block" href="/detalle-noticia/2">
+                              <h2>Microsoft trabaja en 'aplicaciones innovadoras' para su nueva Surface Duo</h2>
+                          </a>
+                          <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                          <ul class="blog-info-link">
+                            <li><a><i class="far fa-user"></i> Tecnología, Software</a></li>
+                            <li><a><i class="far fa-comments"></i> 03 Comments</a></li>
+                          </ul>
+                      </div>
+                    </article>
+
+                    <article class="blog_item">
+                      <div class="blog_item_img">
+                        <img class="card-img rounded-0" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/07/herramienta-administracion-discos-windows-10-2009741.jpg" alt="">
+                        <a href="/detalle-noticia/3" class="blog_item_date">
+                          <h3>26</h3>
+                          <p>Jul</p>
+                        </a>
+                      </div>
+                      
+                      <div class="blog_details">
+                          <a class="d-inline-block" href="/detalle-noticia/3">
+                              <h2>This is what the new Windows 10 disk partition management tool looks like</h2>
+                          </a>
+                          <p>Microsoft is working on a new disk management tool for Windows 10 that will not only allow us to change the letters of the drives that we have available, but also to create or delete partitions in a very simple way.</p>
+                          <ul class="blog-info-link">
+                            <li><a><i class="far fa-user"></i> Tecnología, Software</a></li>
+                            <li><a><i class="far fa-comments"></i> 03 Comments</a></li>
+                          </ul>
+                      </div>
+                    </article>
+
+                </div>
+            </div>
+            
+            <%- include('./layouts/blog-sidebar') -%>
+
+        </div>
+    </div>
+</section>
+
+<%- include('./layouts/footer') -%>

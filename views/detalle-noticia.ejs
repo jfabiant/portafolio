@@ -1,0 +1,110 @@
+<%- include('./layouts/header') -%>
+
+<header class="header_area header_inner_page">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="/"><img src="/img/logo-v2.png" alt=""></a>
+                <a class="navbar-brand logo_inner_page" href="/"><img src="/img/logo-v3.png" height="80" class="mt-4"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav">
+                        <li class="nav-item "><a class="nav-link" href="/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/certificados">Certificados</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="/noticias">Noticias</a></li>
+                        <li class="nav-item "><a class="nav-link" href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2> <%= value.noticiaName %> </h2>
+                <div class="page_link">
+                    <a href="/">Inicio</a>
+                    <a href="/noticias">Noticias</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog_area single-post-area section-margin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post">
+                    <div class="feature-img">
+
+                        <% if(value.id == 1) {  %>
+                        <iframe frameborder="0" allowfullscreen="true" allow="autoplay" title="Dailymotion video player"
+                            height="400" id="f1284f9f45d95c"
+                            src="https://www.dailymotion.com/embed/video/k2gsSMZN5e4XW3sG4UZ?api=postMessage&amp;id=f1284f9f45d95c&amp;origin=https%3A%2F%2Fcomputerhoy.com"
+                            class=" card-img  rounded-0 st-swap-player"
+                            style="z-index: 0 !important; transform: translateX(0%) translateY(0%) translateZ(0px) scale3d(1, 1, 1);"></iframe>
+                        <% } %>
+                        <% if(value.id == 2) {  %>
+                        <iframe width="300" height="400" src="https://www.youtube.com/embed/fssZICsV4Rg" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="card-img  rounded-0"></iframe>
+                        <% } %>
+                        <% if(value.id == 3) {  %>
+                        <img class="img-fluid"
+                            src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/07/herramienta-administracion-discos-windows-10-2009741.jpg"
+                            alt="">
+                        <% } %>
+                    </div>
+                    <div class="blog_details">
+                        <h2> <%= value.noticiaInfo %> </h2>
+                        <ul class="blog-info-link mt-3 mb-4">
+                            <li><a href="#"><i class="ti-user"></i> <%= value.noticiaCategory %> </a></li>
+                        </ul>
+                        <p class="excert">
+                            <%= value.noticiaDescription1 %>
+                        </p>
+                        <div class="quote-wrapper">
+                            <div class="quotes">
+                                <%= value.noticiaPhrase %>
+                            </div>
+                        </div>
+                        <p>
+                            <%= value.noticiaDescription2 %>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-author">
+                    <div class="media align-items-center">
+                        <img src="/img/blog/author.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4> <%= value.noticiaAuthor %> </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <%- include('./layouts/blog-sidebar') -%>
+
+        </div>
+    </div>
+</section>
+
+<%- include('./layouts/footer') -%>
