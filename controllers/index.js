@@ -96,7 +96,7 @@ exports.getDetalleNoticia = async (req, res) => {
         La experiencia nos dice que nada es imposible de hackear, pero de momento la teoría es la que manda. Aún habrá que esperar para que esta Internet Cuántica se convierta en realidad. Según el Departamente de Energía, "el primer prototipo estará listo en unos diez años". Primero se usará en banca y salud, así como en agencias de seguridad y comunicación aérea.
         
         Puede que esta red ultrarrápida y ultrasegura tarde en llegar, pero la informática cuántica ya está funcionando en bancos y otras grandes empresas, gracias al primer ordenador cuántico comercial, el IBM Q System One. Y ya se utiliza para cosas como detectar fraudes en las tarjetas de crédito.`,
-                    "noticiaCategory": "Technology",
+                    "noticiaCategory": "Tecnología",
                     "noticiaPhrase": `“Los grandes logros del hombre son el resultado de la transmisión de ideas y del entusiasmo”.`,
                     "noticiaAuthor": "Juan Antonio Pascual"
                 }
@@ -115,7 +115,7 @@ exports.getDetalleNoticia = async (req, res) => {
                     "noticiaDescription2": `A esto hay que unir que los de Redmond tienen activa una hoja de ruta de software para seguir la evolución del ecosistema Android e impulsarlo con nuevas aplicaciones y tecnologías móviles.
 
         Para ello también se encuentran reclutando otro tipo de ingenieros que van a optimizar esta experiencia para asegurarse que durante la vida útil del dispositivo, el usuario se encuentre con una gran cantidad de aplicaciones totalmente optimizadas.`,
-                    "noticiaCategory": "Technology, Software",
+                    "noticiaCategory": "Tecnología, Software",
                     "noticiaPhrase": `“Los grandes logros del hombre son el resultado de la transmisión de ideas y del entusiasmo”.`,
                     "noticiaAuthor": "David Hernández"
                 }
@@ -128,7 +128,7 @@ exports.getDetalleNoticia = async (req, res) => {
                     "noticiaInfo": "Microsoft is working on a new disk management tool for Windows 10 that will not only allow us to change the letters of the drives that we have available, but also to create or delete partitions in a very simple way.",
                     "noticiaDescription1": `Microsoft is working on a new disk management tool for Windows 10 that will be released in a next version of the operating system, and that will allow us to better manage disks to resize, format partitions or even change the letters of the drives. . Currently there is a storage space management tool in Windows 10, but it is hidden and does not have very efficient functions. That is why Redmond's are now working on a new, more modern disk partition management tool for the operating system, to be incorporated in a future update. This is demonstrated by the Build 20175 version of Windows 10, which is available to insider users, which already includes this new modern disk management tool as standard. The option is available through Windows 10 configuration, System, Storage and Management of disks and volumes. When accessing it, we are shown a list of the disks and volumes that we have available and also the partitions. When selecting some of the volumes we will see the options of "explore" and "properties". In "explore" we simply open the partition in the file explorer, while the "properties" option will allow us to manage the selected volume. There we can change the drive letter that is made by selecting the volume, open "properties" and simply clicking on "change drive letter". The page will also show us a graphic representation of the volume and available storage space. In it we can also select the option "change size", in case we want to reduce the volume when we do not have enough free space.`,
                     "noticiaDescription2": `When accessing it, we are shown a list of the disks and volumes that we have available and also the partitions. When selecting some of the volumes we will see the options of "explore" and "properties". In "explore" we simply open the partition in the file explorer, while the "properties" option will allow us to manage the selected volume. There we can change the drive letter that is made by selecting the volume, open "properties" and simply clicking on "change drive letter". The page will also show us a graphic representation of the volume and available storage space. In it we can also select the option "change size", in case we want to reduce the volume when we do not have enough free space.`,
-                    "noticiaCategory": "Technology, Software",
+                    "noticiaCategory": "Tecnología, Software",
                     "noticiaPhrase": `“Los grandes logros del hombre son el resultado de la transmisión de ideas y del entusiasmo”.`,
                     "noticiaAuthor": "David Hernández"
                 }
